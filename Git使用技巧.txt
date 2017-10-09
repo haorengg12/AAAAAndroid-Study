@@ -1,0 +1,12 @@
+﻿删除错误的commit
+(git log)
+git reset --hard commit_id(上一个的ID)
+git push origin HEAD --force
+
+提交
+(git init)
+git add .
+git commit -m "..."
+
+退出
+exit
