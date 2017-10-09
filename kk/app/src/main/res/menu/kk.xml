@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--全局调用-->
+    <item
+        android:id="@+id/add_item"
+        android:title="增加"/>
+    <item
+        android:id="@+id/Remove_item"
+        android:title="移动"/>
+
+</menu>
