@@ -10,3 +10,7 @@ git commit -m "..."
 
 退出
 exit
+
+删除本地分支(远程分支 git push orign --delete BranchName)
+git branch -a
+git branch -D BranchName
