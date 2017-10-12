@@ -5,18 +5,17 @@
     android:orientation="horizontal">
 
     <fragment
-        android:id="@+id/left_fragment"
-        android:name="com.example.kkcc.fragmenttest.LeftFragment"
+        android:id="@+id/left"
+        android:name="com.example.kkcc.myapplication.Left_Fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
     <FrameLayout
-        android:id="@+id/right_layout"
+        android:id="@+id/right"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1" />
 
-    </FrameLayout>
 
 </LinearLayout>

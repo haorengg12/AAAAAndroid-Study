@@ -1,4 +1,4 @@
-package com.example.kkcc.fragmenttest;
+package com.example.kkcc.myapplication;
 
 import org.junit.Test;
 

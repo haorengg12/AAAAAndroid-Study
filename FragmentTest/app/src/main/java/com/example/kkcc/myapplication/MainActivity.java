@@ -1,4 +1,4 @@
-package com.example.kkcc.fragmenttest;
+package com.example.kkcc.myapplication;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,20 +14,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button = (Button) findViewById(R.id.button);
-        replaceFragment(new RightFragment());
-        button.setOnClickListener(new View.OnClickListener() {
 
+        Button button = (Button) findViewById(R.id.button);
+        replaceFragment(new Right_Fragment());
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new AnotherRightFragment());
+                replaceFragment(new AnotherFragment());
             }
         });
     }
-    private void replaceFragment(Fragment fragment){
+
+    private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.right_layout, fragment);
+        transaction.replace(R.id.right, fragment);
         transaction.commit();
     }
 }
