@@ -1,0 +1,19 @@
+AS文件上传技巧
+
+保留文件夹：
+* \ app \ src（全部保留）
+* \ app \ lib（全部保留）
+* \ gradle（全部保留）
+
+保留文件：
+* \ .gitignore
+* \ build.gradle
+* \ gradle.properties
+* \ gradlew
+* \ gradlew.bat
+* \ settings.gradle
+* \ LICENSE
+
+* \ app \ .gitgnore
+* \ app \ build.gradle
+* \ app \ proguard-rules.pro
