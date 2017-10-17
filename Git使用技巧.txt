@@ -14,3 +14,8 @@ exit
 删除本地分支(远程分支 git push orign --delete BranchName)
 git branch -a
 git branch -D BranchName
+
+ADM打不开data时
+保持虚拟机运行（可以用cmd直接 adb root）
+C:/Users/ASUS/AppData/Local/Android/sdk/platform-tools
+./adb.exe root
