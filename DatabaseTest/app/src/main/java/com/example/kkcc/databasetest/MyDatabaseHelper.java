@@ -22,18 +22,18 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
                     + "id integer primary key autoincrement,"
                     + "categroy_name text,"
                     + "categroy_code integer)";
-    private Context mContext;
+//    private Context mContext;
 
     public MyDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
-        mContext = context;
+//        mContext = context;
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_BOOK);
         db.execSQL(CREATE_CATEGORY);
-        Toast.makeText(mContext, "Create succeed", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext, "Create succeed", Toast.LENGTH_SHORT).show();
     }
 
     @Override
