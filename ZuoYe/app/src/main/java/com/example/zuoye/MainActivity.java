@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("extra_data", inputname);
                 intent.putExtra("extra_dd", inputphone);
                 startActivity(intent);
+                finish();
             }
         });
 
