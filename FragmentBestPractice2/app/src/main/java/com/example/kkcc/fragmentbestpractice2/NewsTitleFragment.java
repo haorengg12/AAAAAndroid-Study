@@ -13,10 +13,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
 /**
  * Created by 黄黄k on 2017-10-14.
  */
-
 
 
 public class NewsTitleFragment extends Fragment {
