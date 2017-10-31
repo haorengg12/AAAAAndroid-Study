@@ -20,7 +20,7 @@ public class Main2Activity extends AppCompatActivity {
             actionBar.hide();
         }
         ActivityCollector.addActivity(this);
-        Button titleButton2 = (Button) findViewById(R.id.title_return);
+//        Button titleButton2 = (Button) findViewById(R.id.title_return);
         Intent intent = getIntent();
         String data = intent.getStringExtra("extra_data");
         String dd = intent.getStringExtra("extra_dd");
@@ -29,14 +29,14 @@ public class Main2Activity extends AppCompatActivity {
         textView.setText("您的名字是：" + data);
         textView1.setText("您的手机号是：" + dd);
         //返回
-        titleButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        titleButton2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
     }
 
     @Override

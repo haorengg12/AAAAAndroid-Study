@@ -1,6 +1,7 @@
 package com.haorengg12.kkcc.zuoye2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -35,8 +36,8 @@ public class Msg_ListAdapter extends RecyclerView.Adapter<Msg_ListAdapter.ViewHo
         }
     }
 
-    public Msg_ListAdapter(List<Msg_List> fruitList) {
-        mMsg_ListList = fruitList;
+    public Msg_ListAdapter(List<Msg_List> msg_lists) {
+        mMsg_ListList = msg_lists;
     }
 
     @Override
@@ -44,15 +45,27 @@ public class Msg_ListAdapter extends RecyclerView.Adapter<Msg_ListAdapter.ViewHo
         if (mContext == null) {
             mContext = parent.getContext();
         }
-        View view = LayoutInflater.from(mContext).inflate(R.layout.msg_list, parent, false);
-        return new ViewHolder(view);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.msg_list, parent, false);//加载的方法
+        final ViewHolder holder = new ViewHolder(view);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = holder.getAdapterPosition();
+                Msg_List msg_list = mMsg_ListList.get(position);
+                Intent intent = new Intent(mContext, MainActivity.class);
+                intent.putExtra(MainActivity.MSG_NAME, msg_list.getName());
+                intent.putExtra(MainActivity.MSG_IMAGEID, msg_list.getImageId());
+                mContext.startActivity(intent);
+            }
+        });
+        return holder;
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Msg_List fruit = mMsg_ListList.get(position);
-        holder.Msg_Listname.setText(fruit.getName());
-        Glide.with(mContext).load(fruit.getImageId()).into(holder.Msg_Listimage);
+        Msg_List msglist = mMsg_ListList.get(position);
+        holder.Msg_Listname.setText(msglist.getName());
+        Glide.with(mContext).load(msglist.getImageId()).into(holder.Msg_Listimage);
     }
 
     @Override

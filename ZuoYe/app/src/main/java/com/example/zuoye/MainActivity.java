@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 ActivityCollector.finishAll();
+                finish();
             }
         });
         dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
