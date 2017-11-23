@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Zxing1</string>
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="custom_options">Custom Options</string>
+    <string name="scan_from_fragment">Scan from fragment</string>
+</resources>
