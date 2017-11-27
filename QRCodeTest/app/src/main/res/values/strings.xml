@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QRCodeTest</string>
+    <string name="scan_barcode">扫描二维码（其实各种码都支持）</string>
+    <string name="write">生成</string>
+    <string name="read">扫描</string>
+    <string name="text">请输入文字，不输入的话会出现...</string>
+</resources>
