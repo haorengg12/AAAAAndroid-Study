@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">timeTest</string>
+    <string name="sandia">圣地亚哥</string>
+    <string name="china">中国</string>
+    <string name="timeTest">15:20:30</string>
+</resources>
