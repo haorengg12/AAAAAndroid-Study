@@ -27,4 +27,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
     compile 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
+    compile 'com.hanks:passcodeview:0.1.2'
+    compile 'com.sch.calendar:easy-calendar:1.0.1'
 }

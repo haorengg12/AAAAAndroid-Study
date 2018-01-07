@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.andrognito.patternlockview.PatternLockView;
 import com.andrognito.patternlockview.listener.PatternLockViewListener;
@@ -38,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
             //获取最终结果的序列
             if (times == 3) {
                 //输入错误3次退出程序
+                Toast.makeText(getApplication(), " Failed 3 Times ! ", Toast.LENGTH_SHORT).show();
                 finish();
             }
             if ("13457".equals(PatternLockUtils.patternToString(mPatternLockView, pattern))) {
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(intent);
+                startActivity(new Intent(MainActivity.this, Main2Activity.class));
                 finish();
             } else {
                 mPatternLockView.setViewMode(PatternLockView.PatternViewMode.WRONG);
