@@ -19,3 +19,8 @@ ADM打不开data时
 保持虚拟机运行（可以用cmd直接 adb root）
 C:/Users/ASUS/AppData/Local/Android/sdk/platform-tools
 ./adb.exe root
+
+返回某一个commit
+git log //找到那一个SHA
+git reset --hard [那一个SHA]
+git push -f -u origin master //提交远程仓库

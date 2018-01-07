@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lockviewTest</string>
+    <string name="text">Unlock Complete ! </string>
+</resources>
