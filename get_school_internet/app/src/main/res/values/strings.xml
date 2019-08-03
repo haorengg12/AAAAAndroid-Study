@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">get_school_internet</string>
+    <string name="btw_login">上网</string>
+    <string name="logout">下线</string>
+</resources>
